@@ -7,10 +7,10 @@ public class Main {
      * nicely
      */
     Superhero spiderman1 = new Superhero("Spiderman", "Red suit", "Super Web");
-    System.out.println(spiderman1);
+    System.out.println(spiderman1.toString());
     Superhero batman1 = new Superhero("Batman", "Batsuit", "Super Strength");
     spiderman1.loseLife();
-    System.out.println(batman1);
+    System.out.println(batman1.toString());
 
   }
 
