@@ -11,8 +11,17 @@ public class Superhero {
     this.costume = inputCostume;
     this.weapon = inputWeapon;
     this.life = true;
-    this.weaponStrength = 0;
+    this.weaponStrength = (int) (Math.random() * 10 + 1);
   }
+
+  public Superhero(String inputName, String inputCostume, String inputWeapon, int strength) {
+    this.name = inputName;
+    this.costume = inputCostume;
+    this.weapon = inputWeapon;
+    this.life = true;
+    this.weaponStrength = strength;
+  }
+
   // TODO #2: Add missing methods.
   public void loseLife() {
     this.life = false;
@@ -22,5 +31,17 @@ public class Superhero {
   // all your code below to create a string with details
     String superHeroDetails = "Superhero details \n" + "name: " + name + "\ncostume: " + costume + "\nweapon: " + weapon + "\nlife: " + life + "\nweapon strength: " + weaponStrength + "\n";
     return superHeroDetails;
+  }
+
+  public String getWeapon() {
+    return this.weapon;
+  }
+
+  public int getWeaponStrength() {
+    return this.weaponStrength;
+  }
+
+  public String getName() {
+    return this.name;
   }
 }
